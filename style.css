@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+
+
+header {
+    height: 70px;
+    background-color: #131e29;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.amazon-logo-img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+
+main {
+    width: 808px;
+    margin: 35px auto;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 0 0 18px 0;
+    font-weight: 700;
+}
+
+
+
+.membership-info {
+    width: 100%;
+    height: 72px;
+    border: 1px solid #d5d9d9;
+    border-radius: 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 18px;
+}
+
+.member-name {
+    font-size: 22px;
+}
+
+.plan,
+.billing {
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan span,
+.billing span {
+    font-size: 11px;
+    font-weight: bold;
+    color: #565959;
+    margin-bottom: 5px;
+}
+
+.billing {
+    min-width: 90px;
+}
+
+
+.cancellation-box {
+    margin-top: 23px;
+    border: 1px solid #d5d9d9;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.cancel-option {
+    padding: 13px 16px;
+}
+
+.option-title {
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.radio {
+    width: 17px;
+    height: 17px;
+    border: 1px solid #a6a6a6;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.selected-radio {
+    border: 4px solid #2777b9;
+}
+
+.cancel-option p {
+    font-size: 13px;
+    margin: 12px 0 0 24px;
+    line-height: 1.35;
+}
+
+.cancel-option ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 24px;
+}
+
+.cancel-option li {
+    font-size: 13px;
+    margin: 7px 0;
+}
+
+.cancel-option li::before {
+    content: "×";
+    color: #e60000;
+    font-size: 21px;
+    font-weight: bold;
+    margin-right: 10px;
+    vertical-align: -2px;
+}
+
+.renewal {
+    background-color: #f0f2f2;
+    border-top: 1px solid #d5d9d9;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.renewal .option-title {
+    font-weight: normal;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 42px;
+    margin-top: 20px;
+}
+
+.buttons a {
+    width: 243px;
+    height: 31px;
+    border-radius: 18px;
+    font-size: 13px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+.keep-button {
+    background-color: white;
+    border: 1px solid #a6a6a6;
+    color: #111;
+}
+
+.end-button {
+    background-color: #ffd814;
+    border: 1px solid #fcd200;
+    color: #111;
+}
+
+.keep-button:hover {
+    background-color: #f7fafa;
+}
+
+.end-button:hover {
+    background-color: #f7ca00;
+}
+
+
+.confirmation-page {
+    width: 808px;
+    margin: 35px auto 0;
+}
+
+.confirmation-page h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+
+.password-section {
+    width: 290px;
+    margin-left: 10px;
+}
+
+.password-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-section label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.password-label a {
+    color: #2673b8;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.password-section input {
+    width: 287px;
+    height: 32px;
+    border: 1px solid #a6a6a6;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 5px 8px;
+}
+
+.password-section > label {
+    margin-top: 0;
+}
+
+.confirmation-buttons {
+    margin-top: 203px;
+}
+
+
+.id-page {
+    width: 808px;
+    margin: 28px auto 0;
+}
+
+.id-page h1 {
+    font-size: 22px;
+    margin: 0 0 52px 0;
+}
+
+.upload-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.upload-box {
+    width: 570px;
+    height: 225px;
+
+    margin: 0 auto;
+
+    border: 2px dashed #d5d9d9;
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #777;
+
+    cursor: pointer;
+}
+
+.upload-box:hover {
+    background-color: #fafafa;
+}
+
+.upload-icon {
+    width: 58px;
+    height: 58px;
+
+    border: 1px solid #eee;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 35px;
+    color: #777;
+
+    margin-bottom: 20px;
+}
+
+.upload-main {
+    font-size: 18px;
+    margin: 0;
+}
+
+.upload-sub {
+    font-size: 15px;
+    color: #aaa;
+    margin: 4px 0 0;
+}
+
+
+.id-buttons {
+    margin-top: 60px;
+}
+
+.error-page {
+    margin: 0;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202124;
+}
+
+.error-container {
+    width: auto;
+    margin: 40px 0 0 43px;
+}
+
+.error-container h1 {
+    font-size: 27px;
+    font-weight: 500;
+    margin-top: 52px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    font-size: 17px;
+    color: #5f6368;
+    margin: 0 0 12px 0;
+}
+
+.error-bottom {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.error-code {
+    font-size: 13px;
+    color: #5f6368;
+}
+
+.error-icon {
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
+.reload-button {
+    background-color: #1a73e8;
+    color: white;
+
+    padding: 9px 18px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    cursor: pointer;
+}
+
+.reload-button:hover {
+    background-color: #1765cc;
+}
+
