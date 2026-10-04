@@ -12,27 +12,34 @@ body {
 
 
 header {
+    width: 100%;
     height: 70px;
     background-color: #131e29;
+
     display: flex;
     align-items: center;
-    padding-left: 25px;
+
+    padding-left: clamp(12px, 3vw, 25px);
 }
 
 .amazon-logo-img {
-    width: 200px;
+    width: clamp(140px, 20vw, 200px);
     height: auto;
     display: block;
 }
 
 
-main {
-    width: 808px;
-    margin: 35px auto;
+main,
+.confirmation-page,
+.id-page {
+    width: 90%;
+    max-width: 808px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
-    font-size: 22px;
+    font-size: clamp(16px, 2.5vw, 22px);
     margin: 0 0 18px 0;
     font-weight: 700;
 }
@@ -190,10 +197,7 @@ h1 {
 }
 
 
-.confirmation-page {
-    width: 808px;
-    margin: 35px auto 0;
-}
+
 
 .confirmation-page h1 {
     font-size: 22px;
@@ -236,7 +240,7 @@ h1 {
     padding: 5px 8px;
 }
 
-.password-section > label {
+.password-section>label {
     margin-top: 0;
 }
 
@@ -244,11 +248,6 @@ h1 {
     margin-top: 203px;
 }
 
-
-.id-page {
-    width: 808px;
-    margin: 28px auto 0;
-}
 
 .id-page h1 {
     font-size: 22px;
@@ -380,4 +379,3 @@ h1 {
 .reload-button:hover {
     background-color: #1765cc;
 }
-
