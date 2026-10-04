@@ -9,17 +9,13 @@ body {
     color: #111;
 }
 
-
-
 header {
     width: 100%;
     height: 70px;
+    padding-left: clamp(12px, 3vw, 25px);
     background-color: #131e29;
-
     display: flex;
     align-items: center;
-
-    padding-left: clamp(12px, 3vw, 25px);
 }
 
 .amazon-logo-img {
@@ -28,35 +24,30 @@ header {
     display: block;
 }
 
-
-main,
-.confirmation-page,
-.id-page {
+main {
     width: 90%;
     max-width: 808px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 35px auto;
 }
 
 h1 {
+    margin: 0 0 18px;
     font-size: clamp(16px, 2.5vw, 22px);
-    margin: 0 0 18px 0;
     font-weight: 700;
 }
+
 
 
 
 .membership-info {
     width: 100%;
     height: 72px;
+    padding: 0 18px;
     border: 1px solid #d5d9d9;
     border-radius: 7px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    padding: 0 18px;
 }
 
 .member-name {
@@ -65,22 +56,24 @@ h1 {
 
 .plan,
 .billing {
-    font-size: 23px;
     display: flex;
     flex-direction: column;
+    font-size: 23px;
 }
 
 .plan span,
 .billing span {
+    margin-bottom: 5px;
+    color: #565959;
     font-size: 11px;
     font-weight: bold;
-    color: #565959;
-    margin-bottom: 5px;
 }
 
 .billing {
     min-width: 90px;
 }
+
+
 
 
 .cancellation-box {
@@ -95,11 +88,11 @@ h1 {
 }
 
 .option-title {
-    font-size: 14px;
-    font-weight: bold;
     display: flex;
     align-items: center;
     gap: 9px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .radio {
@@ -116,38 +109,38 @@ h1 {
 }
 
 .cancel-option p {
-    font-size: 13px;
     margin: 12px 0 0 24px;
+    font-size: 13px;
     line-height: 1.35;
 }
 
 .cancel-option ul {
-    list-style: none;
-    padding: 0;
     margin: 10px 0 0 24px;
+    padding: 0;
+    list-style: none;
 }
 
 .cancel-option li {
-    font-size: 13px;
     margin: 7px 0;
+    font-size: 13px;
 }
 
 .cancel-option li::before {
     content: "×";
+    margin-right: 10px;
     color: #e60000;
     font-size: 21px;
     font-weight: bold;
-    margin-right: 10px;
     vertical-align: -2px;
 }
 
 .renewal {
+    height: 39px;
+    padding: 0 16px;
     background-color: #f0f2f2;
     border-top: 1px solid #d5d9d9;
-    height: 39px;
     display: flex;
     align-items: center;
-    padding: 0 16px;
 }
 
 .renewal .option-title {
@@ -155,25 +148,25 @@ h1 {
 }
 
 
+
+
 .buttons {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 42px;
-    margin-top: 20px;
 }
 
 .buttons a {
     width: 243px;
     height: 31px;
     border-radius: 18px;
-    font-size: 13px;
-    cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
+    font-size: 13px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .keep-button {
@@ -200,28 +193,25 @@ h1 {
 
 
 .confirmation-page h1 {
-    font-size: 22px;
     margin-bottom: 20px;
 }
 
-
-
 .password-section {
-    width: 290px;
+    width: min(100%, 290px);
     margin-left: 10px;
 }
 
 .password-label {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .password-section label {
+    margin-bottom: 4px;
     display: block;
     font-size: 13px;
     font-weight: bold;
-    margin-bottom: 4px;
 }
 
 .password-label a {
@@ -231,13 +221,13 @@ h1 {
 }
 
 .password-section input {
-    width: 287px;
+    width: 100%;
     height: 32px;
+    margin-bottom: 10px;
+    padding: 5px 8px;
     border: 1px solid #a6a6a6;
     border-radius: 7px;
-    margin-bottom: 10px;
     font-size: 16px;
-    padding: 5px 8px;
 }
 
 .password-section>label {
@@ -249,33 +239,33 @@ h1 {
 }
 
 
+
+
+.id-page {
+    margin-top: 28px;
+}
+
 .id-page h1 {
-    font-size: 22px;
-    margin: 0 0 52px 0;
+    margin-bottom: 52px;
 }
 
 .upload-link {
-    text-decoration: none;
     color: inherit;
     display: block;
+    text-decoration: none;
 }
 
 .upload-box {
-    width: 570px;
+    width: min(100%, 570px);
     height: 225px;
-
     margin: 0 auto;
-
     border: 2px dashed #d5d9d9;
     border-radius: 7px;
-
+    color: #777;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
-    color: #777;
-
+    justify-content: center;
     cursor: pointer;
 }
 
@@ -286,59 +276,56 @@ h1 {
 .upload-icon {
     width: 58px;
     height: 58px;
-
+    margin-bottom: 20px;
     border: 1px solid #eee;
     border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 35px;
     color: #777;
-
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
 }
 
 .upload-main {
-    font-size: 18px;
     margin: 0;
+    font-size: 18px;
+    text-align: center;
 }
 
 .upload-sub {
-    font-size: 15px;
+    margin: 4px 12px 0;
     color: #aaa;
-    margin: 4px 0 0;
+    font-size: 15px;
+    text-align: center;
 }
-
 
 .id-buttons {
     margin-top: 60px;
 }
 
+
+
+
 .error-page {
-    margin: 0;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
     color: #202124;
 }
 
 .error-container {
     width: auto;
+    max-width: none;
     margin: 40px 0 0 43px;
 }
 
 .error-container h1 {
-    font-size: 27px;
+    margin: 52px 0 20px;
+    font-size: clamp(22px, 3vw, 27px);
     font-weight: 500;
-    margin-top: 52px;
-    margin-bottom: 20px;
 }
 
 .error-message {
-    font-size: 17px;
+    margin: 0 0 12px;
     color: #5f6368;
-    margin: 0 0 12px 0;
+    font-size: 17px;
 }
 
 .error-bottom {
@@ -348,8 +335,8 @@ h1 {
 }
 
 .error-code {
-    font-size: 13px;
     color: #5f6368;
+    font-size: 13px;
 }
 
 .error-icon {
@@ -359,23 +346,48 @@ h1 {
 }
 
 .reload-button {
-    background-color: #1a73e8;
-    color: white;
-
     padding: 9px 18px;
-
+    background-color: #1a73e8;
     border-radius: 20px;
-
+    color: white;
+    display: inline-block;
     font-size: 14px;
     font-weight: 500;
-
     text-decoration: none;
-
-    display: inline-block;
-
     cursor: pointer;
 }
 
 .reload-button:hover {
     background-color: #1765cc;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .membership-info {
+        height: auto;
+        padding: 14px 18px;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .buttons {
+        gap: 12px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons a {
+        width: min(100%, 243px);
+    }
+
+    .password-section {
+        margin-left: 0;
+    }
+
+    .error-container {
+        margin: 30px 20px;
+    }
 }
